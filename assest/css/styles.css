@@ -11,22 +11,90 @@
 html{
     font-size: 62.5%;
 }/************** 1rem = 10px ******************/
-.body_js{
+.body_0{
     font-size: 1.8rem;
     background-image: url("../img/home/bg-desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
-.body_dest{
+.body_1{
 
     font-size: 1.8rem;
     background-image: url("../img/destination/background-destination-desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
+.body_2{
+
+    font-size: 1.8rem;
+    background-image: url("../img/crew/background-crew-desktop.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.home{
+    display: none;
+}
+
+.destinaction{
+    display: none;
+}
+.crew{
+    display: none;
+}
+.technology{
+    display: none;
+}
+.home.ativo{
+    display: block;
+}
+.destinaction.ativo{
+    display: block;
+}
+.crew.ativo{
+    display: block;
+}
+.technology.ativo{
+    display: block;
+}
+.moon{
+    display: none;
+}
+.mars{
+    display: none;
+}
+.europa{
+    display: none;
+}
+.titan{
+    display: none;
+}
+
+.moon.ativo{
+    display: block;
+}
+.mars.ativo{
+    display: block;
+}
+.europa.ativo{
+    display: block;
+}
+.titan.ativo{
+    display: block;
+}
+
 li{
     cursor: pointer;
 }
+/************************************************************************************************************************/
+li::after{
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 100%;
+    background-color: red;
+    margin: 1rem;
+}
+/************************************************************************************************************************/
 header{
     display: flex;
     justify-content: space-between;
@@ -66,7 +134,7 @@ figure img{
 .conteiner_home{
     display: none;
 }
-.conteiner_home.ativo{
+.conteiner_home{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -74,7 +142,7 @@ figure img{
     padding: 0 10vw;
 }
 .content_home {
-/*****/
+/***************************************************************************************************************************/
 }
 .content_home span{
     font-size: 2.5rem;
@@ -154,12 +222,47 @@ figure img{
     color: rgba(255, 255, 255, 0.829);
     font-size: 1.2rem;
 }
+/*****************************************  CREW                       */
 
 
-
-
-
-
+.conteiner_crew{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap:15vh;
+    padding: 0 9vw;
+}
+.content_crew{
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+.conteiner_crew h1{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.crew_content_int{
+    width: 40rem;
+}
+.crew_content_int > span {
+    margin-bottom: 1rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.829);
+    
+}
+.crew_content_int h2{
+    margin-bottom: 5vh;
+    
+}
+.crew_content_int p{
+    color: rgba(255, 255, 255, 0.829);
+}
+.img_crew{
+    width: 42rem;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+}
 
 
 

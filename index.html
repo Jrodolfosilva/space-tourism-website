@@ -8,10 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assest/css/styles.css">
-    <script src="./assest/js/index.js"defer></script>
     <title>Space Tourism</title>
 </head>
-<body class="body_dest">
+<body class="body_0">
     <header>
         <figure>
             <img src="./assest/img/shared/logo.svg" alt="logo">
@@ -19,7 +18,7 @@
         <div class="conteiner_navbar">
             <nav  class="navbar">
                 
-                <ul class="navbar_list">
+                <ul id="navbar" class="navbar_list">
                     <li>00 Home</li>
                     <li>01 Destinaction</li>
                     <li>02 Crew</li>
@@ -29,44 +28,228 @@
         </div>
     </header>
     <main>
-        <div class="conteiner_home">
-            <section class="content_home">
-                <span>SO,YOU WANT TO TRAVEL TO</span>
-                <h1>SPACE</h1>
-                <p> Let’s face it; if you want to go to space, you might as well <br> genuinely go to outer space and not hover kind of on the <br> edge of it. Well sit back, and relax because we’ll give you <br> a truly out of this world experience!</p>
-            </section>
-            <div class="explore">Explore</div>
+        <div class="home ativo">
+            <div  class="conteiner_home">
+            
+                
+                <section class="content_home">
+                    <span>SO,YOU WANT TO TRAVEL TO</span>
+                    <h1>SPACE</h1>
+                    <p> Let’s face it; if you want to go to space, you might as well <br> genuinely go to outer space and not hover kind of on the <br> edge of it. Well sit back, and relax because we’ll give you <br> a truly out of this world experience!</p>
+                </section>
+                <div class="explore">Explore</div>
+            
+
+            </div>
+
+
         </div>
 
-        <div class="conteiner_destination">
-            <section class="content_destination">
-                <h1><span>01</span> PICK YOUR DESTINATION</h1>
-                <img class="plant_img" src="./assest/img/destination/image-mars.png" alt="imagem do planeta marte">
-            </section>
-            <section class="navbr_destination">
-                <nav class="conteniner_navbr_dest">
-                    <ul class="navbr_list_dest">
-                        <li>MOON</li>
-                        <li>MARS</li>
-                        <li>EUROPA</li>
-                        <li>TITAN</li>
-                    </ul>
-                </nav>
-                <div class="content_planeta">
-                    <h1>MARS</h1>
-                    <p>Don’t forget to pack your hiking boots. You’ll need them <br> to tackle Olympus Mons, the tallest planetary mountain in <br> our solar system. It’s two and a half times the size of <br> Everest!</p>
-                    <div class="content_planeta_viagem">
-                        <div class="distancia">
-                            <span>AVG.DISTANCE</span> <br><span>225 MIL. KM</span>
+
+        <div class="destinaction">
+
+
+            <div class="moon ativo" >
+            
+                <div class="conteiner_destination">
+                    <section class="content_destination">
+                        <h1><span>00</span> PICK YOUR DESTINATION</h1>
+                        <img class="plant_img" src="./assest/img/destination/image-moon.png" alt="imagem da lua">
+                    </section>
+                    <section class="navbr_destination">
+                        <nav class="conteniner_navbr_dest">
+                            <ul class="navbr_list_dest">
+                                <li onclick="moon()">MOON</li>
+                                <li onclick="mars()">MARS</li>
+                                <li onclick="europa()">EUROPA</li>
+                                <li onclick="titan()">TITAN</li>
+                            </ul>
+                        </nav>
+                        <div class="content_planeta">
+                            <h1>MOON</h1>
+                            <p>See our planet as you’ve never seen it before. A perfect <br> relaxing trip away to help regain perspective and come <br> back refreshed. While you’re there, take in some history <br> by visiting the Luna 2 and Apollo 11 landing sites</p>
+                            <div class="content_planeta_viagem">
+                                <div class="distancia">
+                                    <span>AVG.DISTANCE</span> <br><span>84,400 KM</span>
+                                </div>
+                                <div class="tempo">
+                                    <span>EST.TRAVEL TIME</span> <br><span>3 DAY</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tempo">
-                            <span>EST.TRAVEL TIME</span> <br><span>9 MONTHS</span>
+
+                    </section>
+                </div>
+            </div>
+            <div class="mars">
+
+                <div id="mars" class="conteiner_destination">
+                <section class="content_destination">
+                    <h1><span>01</span> PICK YOUR DESTINATION</h1>
+                    <img class="plant_img" src="./assest/img/destination/image-mars.png" alt="imagem do planeta marte">
+                </section>
+                <section class="navbr_destination">
+                    <nav class="conteniner_navbr_dest">
+                        <ul class="navbr_list_dest">
+                                <li onclick="moon()">MOON</li>
+                                <li onclick="mars()">MARS</li>
+                                <li onclick="europa()">EUROPA</li>
+                                <li onclick="titan()">TITAN</li>
+                        </ul>
+                    </nav>
+                    <div class="content_planeta">
+                        <h1>MARS</h1>
+                        <p>Don’t forget to pack your hiking boots. You’ll need them <br> to tackle Olympus Mons, the tallest planetary mountain in <br> our solar system. It’s two and a half times the size of <br> Everest!</p>
+                        <div class="content_planeta_viagem">
+                            <div class="distancia">
+                                <span>AVG.DISTANCE</span> <br><span>225 MIL. KM</span>
+                            </div>
+                            <div class="tempo">
+                                <span>EST.TRAVEL TIME</span> <br><span>9 MONTHS</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </section>
+                </section>
+            </div>
+            </div>
+        
+            <div class="europa">
+            <div class="conteiner_destination">
+                <section class="content_destination">
+                    <h1><span>03</span> PICK YOUR DESTINATION</h1>
+                    <img class="plant_img" src="./assest/img/destination/image-europa.png" alt="imagem da europa">
+                </section>
+                <section class="navbr_destination">
+                    <nav class="conteniner_navbr_dest">
+                        <ul class="navbr_list_dest">
+                            <li onclick="moon()">MOON</li>
+                            <li onclick="mars()">MARS</li>
+                            <li onclick="europa()">EUROPA</li>
+                            <li onclick="titan()">TITAN</li>
+                        </ul>
+                    </nav>
+                    <div class="content_planeta">
+                        <h1>EUROPA</h1>
+                        <p>
+                            The smallest of the four Galilean moons orbiting Jupiter,  <br> Europa is a winter lover’s dream. With an icy surface, it’s <br> perfect for a bit of ice skating, curling, hockey, or simple <br> relaxation in your snug wintery cabin.
+
+                        </p>
+                        <div class="content_planeta_viagem">
+                            <div class="distancia">
+                                <span>AVG.DISTANCE</span> <br><span>628 MIL KM</span>
+                            </div>
+                            <div class="tempo">
+                                <span>EST.TRAVEL TIME</span> <br><span>3 YEARS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            </div>
+
+            <div class="titan">
+            <div id="titan"  class="conteiner_destination">
+                <section class="content_destination">
+                    <h1><span>04</span> PICK YOUR DESTINATION</h1>
+                    <img class="plant_img" src="./assest/img/destination/image-europa.png" alt="imagem de titan">
+                </section>
+                <section class="navbr_destination">
+                    <nav class="conteniner_navbr_dest">
+                        <ul class="navbr_list_dest">
+                                <li onclick="moon()">MOON</li>
+                                <li onclick="mars()">MARS</li>
+                                <li onclick="europa()">EUROPA</li>
+                                <li onclick="titan()">TITAN</li>
+                        </ul>
+                    </nav>
+                    <div class="content_planeta">
+                        <h1>TITAN</h1>
+                        <p>
+                            The only moon known to have a dense atmosphere <br> other than Earth,  Titan is a home away from home <br> (just  a few  hundred degrees colder!). As a bonus, <br>you get  striking views of the Rings of Saturn
+
+                        </p>
+                        <div class="content_planeta_viagem">
+                            <div class="distancia">
+                                <span>AVG.DISTANCE</span> <br><span>1.6 BIL KM</span>
+                            </div>  
+                            <div class="tempo">
+                                <span>EST.TRAVEL TIME</span> <br><span>7 YEARS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            </div>
+
         </div>
+
+
+
+        <div class="crew">
+            
+            <section class="conteiner_crew">
+                <div>
+                    <h1><span>02 </span>MEET YOUR CREW</h1>
+                </div>
+                <div class="content_crew">
+                   
+                    <div class="crew_content_int">
+                        <span>FLIGHT ENGINEER</span>
+                        <h2>ANOUSHEH ANSARI</h2>
+                        <P name="enginner">
+                            Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+
+                        </P>
+
+                        <P name="commander">
+                            
+
+                        </P>
+
+                        <P name="pilot">
+                            
+
+                        </P>
+                    </div>
+                    <div>
+                        
+                        <label for="enginner">
+                            <input type="radio" name="engineer" id="engineer">
+                        </label>
+
+                        <label for="commander">
+                            <input type="radio" name="engineer" id="engineer">
+                        </label>
+                        
+                        <label for="pilot">
+                            <input type="radio" name="engineer" id="engineer">
+                        </label>
+                        <label for="pilot">
+                            <input type="radio" name="engineer" id="engineer">
+                        </label>
+                    </div>
+                    
+                
+                </div>
+            </section>
+            
+            <img class="img_crew" src="./assest/img/crew/image-anousheh-ansari.png" alt="imagem de uma mulher">
+
+        </div>
+
+
+
+
+
+        <div class="technology">
+            
+        </div>
+
+
     </main>
+    <script src="./assest/js/index.js"defer></script>
 </body>
 </html>
