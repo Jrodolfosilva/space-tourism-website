@@ -46,15 +46,19 @@ html{
 }
 .home.ativo{
     display: block;
+    min-height: 100vh;
 }
 .destinaction.ativo{
     display: block;
+    min-height: 100vh
 }
 .crew.ativo{
     display: block;
+    min-height: 100vh;
 }
 .technology.ativo{
     display: block;
+    min-height: 100vh;
 }
 .moon{
     display: none;
@@ -171,11 +175,15 @@ figure img{
 .content_destinaction
 
 */
+.destinaction{
+   min-height: 100vh;
+}
 .conteiner_destination{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 02vh 9vw;
+    padding: 01vh 9vw;
 }
 .conteiner_destination h1{
     font-size: 2rem;
@@ -186,10 +194,14 @@ figure img{
     margin-left: 2vw;
     margin-top: 18vh;
 }
+.navbr_destination{
+    min-width: 35vw;
+}
 .navbr_list_dest{
     display: flex;
     gap:1.5rem;
     margin-bottom: 2vw;
+    max-width: 20vw;
 }
 .navbr_list_dest li{
     display: block;
@@ -198,8 +210,6 @@ figure img{
 .navbr_list_dest li:hover{
     border-bottom:  1px solid yellow;
 }
-
-
 
 .content_planeta h1{
     font-size: 10rem;
@@ -224,13 +234,16 @@ figure img{
 }
 /*****************************************  CREW                       */
 
-
+.crew{
+    width: 100vw;
+    padding: 0 9vw;
+}
 .conteiner_crew{
-    margin-top: 2vh;
     display: flex;
     flex-direction: column;
+    margin-top: 2vh;
     gap:15vh;
-    padding: 0 9vw;
+ 
 }
 .content_crew{
     display: flex;
@@ -241,9 +254,7 @@ figure img{
     font-size: 2rem;
     font-weight: 200;
 }
-.crew_content_int{
-    width: 40rem;
-}
+
 .crew_content_int > span {
     margin-bottom: 1rem;
     font-weight: 100;
@@ -277,7 +288,7 @@ figure img{
 
 @media (max-width:768px) {
     html{
-        font-size:50%;
+        font-size:65%;
     }
     header{
         padding: 0;
@@ -287,6 +298,7 @@ figure img{
         background-size:cover;
         background-repeat: no-repeat;
     }
+    /*home tablet*/
     .navbar_list{
         padding: 3vh;
         gap:1rem;
@@ -302,8 +314,7 @@ figure img{
         flex-direction: column;
         align-items: center;
         margin: 6vh;
-        gap:6vh;
-        height: 80vh;
+        gap:12vh;
     }
     .content_home{
         text-align: center;
@@ -318,10 +329,65 @@ figure img{
     .explore{
         width: 20rem;
     }
+    /**************************/
+    /**tablet destinaction*/
+    .content_destination{
+        display: flex;
+        flex-direction: column;
+        padding: 4vh 0;
+
+    }
+    .content_destination h1, .conteiner_crew>div>h1{
+        position: absolute;
+        left: 3vh;
+    }
+    .plant_img{
+        align-self: center;
+        width: 32rem;
+        margin:4vh  0;
+    }
+    .conteiner_destination{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbr_list_dest{
+        min-width: 100%;
+        justify-content: center;
+    }
+    .content_planeta{
+        text-align: center;
+    }
+    .content_planeta_viagem{
+        display: flex;
+        justify-content: center;
+    }
+     /**************************/
+    /**tablet crew*/
+    .crew{
+        width: auto;
+    }
+    .conteiner_crew{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap:8vh;
+        padding: 3vh 0;
+       
+    }
+    .content_crew{
+        align-items: center;
+        gap:3vh;
+    }
+    .img_crew{
+        width: 70%;
+        bottom:0% ;
+        left: 15%;
+    }
 }
 @media (max-width:425px) {
     html{
-        font-size: 30%;
+        font-size: 33%;
     }
 
 }
