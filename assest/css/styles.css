@@ -53,7 +53,7 @@ html{
     min-height: 100vh
 }
 .crew.ativo{
-    display: block;
+    display: flex;
     min-height: 100vh;
 }
 .technology.ativo{
@@ -90,14 +90,7 @@ li{
     cursor: pointer;
 }
 /************************************************************************************************************************/
-li::after{
-    content: "";
-    display: block;
-    height: 0.2rem;
-    width: 100%;
-    background-color: red;
-    margin: 1rem;
-}
+
 /************************************************************************************************************************/
 header{
     display: flex;
@@ -176,23 +169,22 @@ figure img{
 
 */
 .destinaction{
-   min-height: 100vh;
 }
 .conteiner_destination{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 01vh 9vw;
+    padding: 02vh 8vw;
 }
-.conteiner_destination h1{
+.conteiner_destination h1 , .conteiner_crew h1{
     font-size: 2rem;
     font-weight: 200;
 }
 .plant_img{
     width: 25vw;
     margin-left: 2vw;
-    margin-top: 18vh;
+    margin-top: 14vh;
 }
 .navbr_destination{
     min-width: 35vw;
@@ -207,12 +199,8 @@ figure img{
     display: block;
     height: 2rem;
 } 
-.navbr_list_dest li:hover{
-    border-bottom:  1px solid yellow;
-}
-
 .content_planeta h1{
-    font-size: 10rem;
+    font-size: 9rem;
     margin: 3vh 0;
 }
 
@@ -235,44 +223,45 @@ figure img{
 /*****************************************  CREW                       */
 
 .crew{
-    width: 100vw;
-    padding: 0 9vw;
+    padding: 0 8vw;
+    flex-wrap: wrap;
+    gap:9vw;
 }
 .conteiner_crew{
     display: flex;
     flex-direction: column;
     margin-top: 2vh;
     gap:15vh;
- 
+    width: 40vw;
 }
 .content_crew{
     display: flex;
     flex-direction: column;
-    gap: 8vh;
-}
-.conteiner_crew h1{
-    font-size: 2rem;
-    font-weight: 200;
+    gap: 04vh;
 }
 
 .crew_content_int > span {
-    margin-bottom: 1rem;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.829);
-    
+    font-size: 3rem;
 }
 .crew_content_int h2{
     margin-bottom: 5vh;
-    
+    font-size: 5rem;
 }
 .crew_content_int p{
+    font-size: 1.6rem;
+    line-height: 3rem;
     color: rgba(255, 255, 255, 0.829);
+}
+.box_img_crew{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 81vh;
 }
 .img_crew{
     width: 42rem;
-    position: absolute;
-    right: 10%;
-    bottom: 0%;
 }
 
 
@@ -344,7 +333,7 @@ figure img{
     .plant_img{
         align-self: center;
         width: 32rem;
-        margin:4vh  0;
+        margin-top:8vh;
     }
     .conteiner_destination{
         flex-direction: column;
@@ -364,13 +353,14 @@ figure img{
      /**************************/
     /**tablet crew*/
     .crew{
-        width: auto;
+        flex-direction: column;
+        align-items: center;
     }
     .conteiner_crew{
-        display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        width: 70vw;
         gap:8vh;
         padding: 3vh 0;
        
@@ -380,9 +370,7 @@ figure img{
         gap:3vh;
     }
     .img_crew{
-        width: 70%;
-        bottom:0% ;
-        left: 15%;
+        width: 50vw;
     }
 }
 @media (max-width:425px) {
