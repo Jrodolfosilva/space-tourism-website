@@ -57,19 +57,16 @@ html{
 }
 .home.ativo{
     display: block;
-    min-height: 100vh;
 }
 .destinaction.ativo{
     display: block;
-    min-height: 100vh
 }
 .crew.ativo{
     display: flex;
-    min-height: 100vh;
+  
 }
 .technology.ativo{
     display: block;
-    min-height: 100vh;
 }
 .moon{
     display: none;
@@ -179,8 +176,7 @@ figure img{
 .content_destinaction
 
 */
-.destinaction{
-}
+
 .conteiner_destination{
     display:flex;
     flex-wrap: wrap;
