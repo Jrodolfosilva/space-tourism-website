@@ -2,10 +2,18 @@ function menuHeader(){
 
         const menuList = document.querySelectorAll('#navbar > li')
         const sectionMenu = document.querySelectorAll('main>div')
+        const body = document.querySelector('body')
 
+        function bodyBg(index){
+            const classes =["bg0","bg1","bg2","bg3"]
+            classes.forEach((item)=>{
+                body.classList.remove(item)
+                body.classList.add(`bg${index}`)
+            })
+            
+        }
 
         function show (index){
-            
             sectionMenu.forEach((li)=>{
                 li.classList.remove('ativo')
             })
@@ -15,6 +23,8 @@ function menuHeader(){
         menuList.forEach((li,index)=>{
             li.addEventListener('click',()=>{
                 show(index)
+                bodyBg(index)
+
             })
         })
 }

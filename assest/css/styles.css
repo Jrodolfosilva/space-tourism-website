@@ -8,26 +8,37 @@
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
 }
+main{
+    max-height: 100vh;
+}
 html{
     font-size: 62.5%;
 }/************** 1rem = 10px ******************/
-.body_0{
+.body ,.body.bg0{
     font-size: 1.8rem;
     background-image: url("../img/home/bg-desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
-.body_1{
+.body.bg1{
 
     font-size: 1.8rem;
     background-image: url("../img/destination/background-destination-desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
-.body_2{
+.body.bg2{
 
     font-size: 1.8rem;
     background-image: url("../img/crew/background-crew-desktop.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.body.bg3{
+
+    font-size: 1.8rem;
+    background-image: url("../img/technology/background-technology-desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -282,11 +293,20 @@ figure img{
     header{
         padding: 0;
     }
-    body{
+    .body ,.body.bg0{
         background-image: url("../img/home/background-home-tablet.jpg");
-        background-size:cover;
-        background-repeat: no-repeat;
     }
+    .body.bg1{
+        background-image: url("../img/destination/background-destination-tablet.jpg");
+    }
+    .body.bg2{
+       background-image: url("../img/crew/background-crew-tablet.jpg");
+    }
+    
+    .body.bg3{
+        background-image: url("../img/technology/background-technology-tablet.jpg");
+    }
+    
     /*home tablet*/
     .navbar_list{
         padding: 3vh;
@@ -377,5 +397,31 @@ figure img{
     html{
         font-size: 33%;
     }
+
+    .body ,.body.bg0{
+        background-image: url("../img/home/background-home-mobile.jpg");
+    }
+    .body.bg1{
+        background-image: url("../img/destination/background-destination-mobile.jpg");
+    }
+    .body.bg2{
+       background-image: url("../img/crew/background-crew-mobile.jpg");
+    }
+    
+    .body.bg3{
+        background-image: url("../img/technology/background-technology-mobile.jpg");
+    }
+    .crew{
+        justify-content: center;
+    }
+    .box_img_crew{
+        justify-content: flex-start;
+    }
+    
+    .img_crew{
+        margin-top: 13vh;
+        width: 75vw;
+    }
+    
 
 }
