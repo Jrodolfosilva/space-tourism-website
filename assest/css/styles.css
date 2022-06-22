@@ -9,7 +9,7 @@
     color: #fff;
 }
 main{
-    min-height: 100vh;
+    max-height: 100vh;
 }
 html{
     font-size: 62.5%;
@@ -139,10 +139,10 @@ figure img{
     width: 14rem;
     padding: 0.3rem;
 }
-.conteiner_home{
+.container_home{
     display: none;
 }
-.conteiner_home{
+.container_home{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -175,19 +175,19 @@ figure img{
 
 /*Destination*/
 /*
-.conteiner_destinaction
+.container_destinaction
 .content_destinaction
 
 */
 
-.conteiner_destination{
+.container_destination{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     padding: 02vh 8vw;
 }
-.conteiner_destination h1 , .conteiner_crew h1{
+.container_destination h1 , .container_crew h1{
     font-size: 2rem;
     font-weight: 200;
 }
@@ -237,7 +237,7 @@ figure img{
     flex-wrap: wrap;
     gap:9vw;
 }
-.conteiner_crew{
+.container_crew{
     display: flex;
     flex-direction: column;
     margin-top: 2vh;
@@ -318,7 +318,7 @@ figure img{
     .navbar_list li:nth-child(4){
         margin: 0;
     }
-    .conteiner_home{
+    .container_home{
         flex-direction: column;
         align-items: center;
         margin: 6vh;
@@ -345,7 +345,7 @@ figure img{
         padding: 4vh 0;
 
     }
-    .content_destination h1, .conteiner_crew>div>h1{
+    .content_destination h1, .container_crew>div>h1{
         position: absolute;
         left: 3vh;
     }
@@ -354,7 +354,7 @@ figure img{
         width: 32rem;
         margin-top:8vh;
     }
-    .conteiner_destination{
+    .container_destination{
         flex-direction: column;
         align-items: center;
     }
@@ -375,7 +375,7 @@ figure img{
         flex-direction: column;
         align-items: center;
     }
-    .conteiner_crew{
+    .container_crew{
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -421,7 +421,7 @@ figure img{
     .crew_radio_mobile{
         display: block;
     }
-    .conteiner_crew h1{
+    .container_crew h1{
         top:14vh;
     }
     .box_img_crew{
