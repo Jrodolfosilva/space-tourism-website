@@ -19,6 +19,7 @@ html{
     background-image: url("../img/home/bg-desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 .body.bg1{
 
@@ -388,6 +389,7 @@ figure img{
         align-items: center;
         gap:3vh;
     }
+  
     .img_crew{
         width: 50vw;
     }
@@ -415,6 +417,10 @@ figure img{
         flex-direction: column-reverse;
         gap:0px
     }
+    .container_crew{
+        gap:0vh;
+        justify-content: space-between;
+    }
     .crew_radio{
         display: none;
     }
@@ -426,14 +432,24 @@ figure img{
     }
     .box_img_crew{
         justify-content: flex-start;
-        height: 45vh;
-        margin-bottom: 05vh;
+        height: 47vh;
+        margin-bottom: 0vh;
     }
     
     .img_crew{
         margin-top: 13vh;
-        width: 70vw;
+        width: 405w;
     }
     
 
+}
+@media (max-width:320px) {
+
+    .container_home{
+        gap:16vh;
+
+    }
+    .box_img_crew{
+        height: 38vh;
+    }
 }
