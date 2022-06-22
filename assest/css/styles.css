@@ -9,7 +9,7 @@
     color: #fff;
 }
 main{
-    max-height: 100vh;
+    min-height: 100vh;
 }
 html{
     font-size: 62.5%;
@@ -41,6 +41,9 @@ html{
     background-image: url("../img/technology/background-technology-desktop.jpg");
     background-size:cover;
     background-repeat: no-repeat;
+}
+.crew_radio_mobile{
+    display: none;
 }
 .home{
     display: none;
@@ -407,16 +410,29 @@ figure img{
     .body.bg3{
         background-image: url("../img/technology/background-technology-mobile.jpg");
     }
+    
     .crew{
-        justify-content: center;
+        flex-direction: column-reverse;
+        gap:0px
+    }
+    .crew_radio{
+        display: none;
+    }
+    .crew_radio_mobile{
+        display: block;
+    }
+    .conteiner_crew h1{
+        top:14vh;
     }
     .box_img_crew{
         justify-content: flex-start;
+        height: 45vh;
+        margin-bottom: 05vh;
     }
     
     .img_crew{
         margin-top: 13vh;
-        width: 75vw;
+        width: 70vw;
     }
     
 
