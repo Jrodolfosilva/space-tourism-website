@@ -31,6 +31,59 @@ function menuHeader(){
 menuHeader()
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mobile (){
+    const ativaMenu = document.querySelector(".menu_mobile > img")
+    const menuMoblie = document.querySelector('.navbar_list');
+   
+    ativaMenu.addEventListener('click', ()=>{
+        menuMoblie.classList.toggle('mobile')
+    }) 
+
+
+
+
+
+}
+mobile()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function pinhao(index){
     const sectionDest = document.querySelectorAll('.destinaction > div')
 
