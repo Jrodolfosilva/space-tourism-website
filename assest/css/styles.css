@@ -449,12 +449,14 @@ figure img{
     
     .crew{
         flex-direction: column-reverse;
-        gap:0px
+        gap:0px;
+        margin-top: 10vh;
     }
     .container_crew{
         gap:0vh;
         justify-content: space-between;
     }
+    
     .crew_radio{
         display: none;
     }
@@ -462,11 +464,11 @@ figure img{
         display: block;
     }
     .container_crew h1{
-        top:14vh;
+        top:12vh;
     }
     .box_img_crew{
-        justify-content: flex-start;
-        height: 47vh;
+        justify-content: flex-end;
+        height: auto;
         margin-bottom: 0vh;
     }
     
