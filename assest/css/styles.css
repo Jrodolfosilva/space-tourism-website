@@ -13,7 +13,7 @@ main{
 }
 html{
     font-size: 62.5%;
-}/************** 1rem = 10px ******************/
+}
 .body ,.body.bg0{
     font-size: 1.8rem;
     background-image: url("../img/home/bg-desktop.jpg");
@@ -35,7 +35,6 @@ html{
     background-size:cover;
     background-repeat: no-repeat;
 }
-
 .body.bg3{
 
     font-size: 1.8rem;
@@ -104,6 +103,7 @@ html{
 li{
     cursor: pointer;
 }
+
 /************************************************************************************************************************/
 
 /************************************************************************************************************************/
@@ -112,6 +112,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 3vh 0vh;
+    max-height: 10rem;
 }
 figure img{
     margin-left: 2vw;
